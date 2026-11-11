@@ -1,0 +1,50 @@
+{
+  "name": "dsh-qwen-skill-gate",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness plugin that exposes Qwen (qianwen*) skills only while the session runs on the Qwen Token Plan CN provider, and hides/blocks them on any other provider.",
+  "type": "module",
+  "license": "MIT",
+  "author": "PaysNatal",
+  "homepage": "https://github.com/PaysNatal/dsh-qwen-skill-gate#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaysNatal/dsh-qwen-skill-gate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PaysNatal/dsh-qwen-skill-gate/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "qwen",
+    "qianwen",
+    "skills",
+    "provider",
+    "gate",
+    "context-hygiene"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/en.json",
+    "locale/zh.json",
+    "icon.svg",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

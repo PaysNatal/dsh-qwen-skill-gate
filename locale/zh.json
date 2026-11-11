@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "千问技能门禁",
+    "description": "仅当会话使用 Qwen Token Plan CN（qwen-token-plan-cn）供应商时，才显示并允许加载千问（qianwen*）技能；切换到其他供应商时自动隐藏并拦截。"
+  }
+}

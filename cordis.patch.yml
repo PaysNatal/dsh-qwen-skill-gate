@@ -1,0 +1,13 @@
+- insert:
+    - id: dsh-qwen-skill-gate
+      name: 'dsh-qwen-skill-gate'
+      config:
+        # Only this provider may see / load the gated skills.
+        provider: qwen-token-plan-cn
+        # Skill-name prefixes to gate (matches qianwen-* and qianwenai-*).
+        prefixes:
+          - qianwen
+        # Extra exact skill names to gate, in addition to the prefixes.
+        skills: []
+        # When the session provider cannot be determined, hide the gated skills.
+        failClosed: true

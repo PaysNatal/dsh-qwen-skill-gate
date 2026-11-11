@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Qwen skill gate",
+    "description": "Shows and allows the Qwen (qianwen*) skills only while the session runs on the Qwen Token Plan CN provider; hides and blocks them on any other provider."
+  }
+}
